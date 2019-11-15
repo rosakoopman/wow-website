@@ -1,0 +1,453 @@
+
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background: #FCFCFC;
+}
+
+body {
+	font-family: 'Helvetica', sans-serif;
+	max-width: 300em;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/*HEADER*/
+
+.knop-iconen {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: calc(100% - 3em);
+	max-width: 40em;
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+	.knop-iconen {
+		max-width: 1200px;
+	}
+}
+
+
+/*ZOEKEN*/
+
+.search-icon {
+	position: absolute;
+	width: 20px;
+	margin-top: 17px;
+	margin-left: 30px;
+}
+
+#zoek-label {
+	border: none;
+	margin: 0em 1.5em;
+	padding-top: 0.5em;
+}
+
+#zoek-label legend {
+	color: #5A5A5A;
+	padding-top: 1em;
+	font-weight: bold;
+	animation-name: noticeMe;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+
+@keyframes noticeMe {
+	0% {}
+	25% {
+		color: #B32091;
+	}
+	50% {
+		color: #B32091;
+		margin-left: 1em;
+	}
+	75% {}
+	100% {}
+}
+
+#input-text {
+	color: grey;
+	padding: 0.8em;
+	margin-right: 1.2em;
+	width: calc(100% - 6.1em);
+	max-width: 35em;
+	border-radius: 0.5em;
+	border: none;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+#submit-knop {
+	background-color: rgb(179, 32, 145);
+	padding: 1em;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	color: white;
+	border-radius: 0.5em;
+	margin-top: 1em;
+}
+
+header {
+	margin-top: -6rem;
+	transition: margin-top 500ms;
+	border: none;
+}
+
+header > form {
+	height: 6rem;
+	background-color: #E6E6E6;
+}
+
+header.show-form {
+	margin-top: 0;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+	#zoek-label {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		width: calc(100% - 3em);
+	}
+}
+
+
+/*ICONEN*/
+
+#back-button {
+	width: 3em;
+	margin-top: 1.3em;
+}
+
+#zoeken {
+	width: 4em;
+}
+
+#my-profile {
+	width: 3em;
+	height: 3em;
+	border-radius: 100%;
+	margin-top: 1.3em;
+}
+
+
+/*TITEL*/
+
+.title-container {
+	margin: 0 auto;
+	width: calc(100% - 3em);
+	max-width: 40em;
+	color: #363636;
+}
+
+header h1 {
+	font-size: 9vw;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+	header h1 {
+		font-size: 6vw;
+		margin: 0 auto;
+		padding-top: 10%;
+		padding-bottom: 5%;
+	}
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+	header h1 {
+		font-size: 4em;
+	}
+}
+
+
+/*SORTING BUTOTNS*/
+
+.buttons {
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 40em;
+	margin-top: 20px;
+	border-bottom: solid 1px lightgrey;
+	padding-bottom: 2em;
+}
+
+.sort-button {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: bold;
+	font-size: 0.8em;
+	color: white;
+	padding: 1em;
+	background-color: #B32091;
+	border: none;
+	border-radius: 10em;
+}
+
+.sort-button:active {
+	background-color: #DB31BB;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+	.sort-button {
+		font-size: 1em;
+	}
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+	.sort-button {
+		font-size: 1em;
+	}
+}
+
+
+/*STORIES*/
+
+.stories {
+	margin: 0 auto;
+	margin-top: 1em;
+	width: calc(100% - 3em);
+	max-width: 40em;
+}
+
+.verhaal {
+	padding: 1em;
+	margin-bottom: 2em;
+	list-style: none;
+	background-color: #FFFFFF;
+	border-radius: 0.5em;
+	-webkit-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+	box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+	max-width: 40em;
+	padding-bottom: 70px;
+}
+
+.verhaal-beschrijving {
+	float: none;
+	display: block;
+	position: absolute;
+	max-width: 80%;
+	margin-top: 4.7em;
+	color: #ACACAC;
+	font-size: 0.8em;
+}
+
+.verhaal:hover {
+	transition: all .3s;
+	transform: scale(1.02);
+}
+
+.verhaal a {
+	display: flex;
+	justify-content: space-between;
+}
+
+.verhaal-wrapper {
+	display: flex;
+}
+
+.verhaal .thumbnail {
+	width: 3em;
+	height: 3em;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.verhaal-titel-likes {
+	margin-left: 3.7em;
+}
+
+.verhaal-likes {
+	display: flex;
+	align-items: center;
+	margin-top: 0.3em;
+}
+
+.likes-nummer {
+	margin-left: 0.5em;
+	color: #D3D3D3;
+	font-size: 0.8em;
+	font-weight: 800;
+}
+
+.verhaal h2 {
+	color: #2e2e1f;
+	font-size: 1em;
+}
+
+.verhaal .hearticon {
+	width: 1.4em;
+	display: block;
+}
+
+.verhaal .download-button {
+	border-radius: 100%;
+	width: 3em;
+
+}
+
+.verhaal-nummer {
+	font-size: 2em;
+	position: absolute;
+	margin-left: 1.9em;
+	margin-top: 0.1em;
+	color: #363636;
+	font-weight: 600;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+	.verhaal {
+		padding: 1em;
+		padding-bottom: 5em;
+	}
+	.verhaal-beschrijving {
+		max-width: 37em;
+		font-size: 1em;
+		font-weight: 100;
+	}
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+	.verhaal {
+		padding: 1em;
+		padding-bottom: 5em;
+		;
+	}
+	.verhaal-beschrijving {
+		padding-top: 1em;
+		max-width: 38em;
+	}
+	.verhaal .thumbnail {
+		width: 4em;
+		height: 4em;
+	}
+	.verhaal h2 {
+		font-size: 1.4em;
+	}
+	.verhaal h4 {
+		font-size: 1em;
+	}
+	.verhaal .download-button {
+		width: 4em;
+	}
+	.verhaal-likes {
+		font-size: 1.3em;
+	}
+	.verhaal-nummer {
+		margin-left: 1.7em;
+		margin-top: 0.1em;
+		font-size: 3em;
+	}
+	.verhaal-titel-likes {
+		margin-left: 5.5em;
+	}
+}
+
+
+/*FOOTER*/
+
+footer {
+	margin: 0 auto;
+	padding: 2em;
+	letter-spacing: 0px;
+}
+
+.footer-buttons {
+	display: flex;
+	align-content: space-between;
+	justify-content: center;
+	margin: 20px;
+
+}
+
+.footerlogo {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 50px;
+}
+
+
+footer a {
+	border-radius: 2em;
+	border: solid;
+	border-width: 2px;
+	border-color: #D3D3D3;
+	color: #D3D3D3;
+	margin: 0 auto;
+	padding: 8px 15px;
+	background-color: #FCFCFC;
+	font-weight: 100;
+}
+
+.footer-button-top {
+	border-radius: 2em;
+	border: solid;
+	border-width: 2px;
+	border-color: #D3D3D3;
+	color: #D3D3D3;
+	margin: 0 auto;
+	padding: 0.5em 1em;
+	background-color: #FCFCFC;
+	font-weight: 100;
+}
+
+.footer-button-home:active {
+	background-color: white;
+}
+
+.footer-button-top:active {
+	background-color: white;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+	.footer-buttons {
+		max-width: 30em;
+		margin: 0 auto;
+	}
+}

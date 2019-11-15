@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #FFF;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    max-width: 300em;
+    margin: auto;
+    background-color: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sectie-1 {
+    background-color: #F3F3F3;
+    padding-bottom: 2em;
+}
+
+/*HEADER*/
+
+header {
+    max-width: 40em;
+    margin: auto;
+    width: calc(100% - 3em);
+}
+
+.knop-iconen {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    header {
+        max-width: 1200px;
+    }
+    .knop-iconen {
+        width: 100%;
+    }
+}
+
+#my-profile {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    margin-top: 1.3em;
+}
+
+#wow-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+#taalicoon {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+/*TITEL*/
+
+header h1 {
+    font-size: 9vw;
+    margin-top: 1em;
+    color: #363636;
+    margin-bottom: 1em;
+}
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 6vw;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+}
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+}
+/*sorteren*/
+
+#categorie-zoeken {
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 600;
+    width: calc(100% - 3rem);
+}
+
+#categorie-zoeken label {
+    display: block;
+}
+/*ipad*/
+
+@media (min-width: 600px) {
+    #categorie-zoeken {
+        width: calc(100% - 4em);
+        margin: 0 auto;
+        max-width: 40em;
+    }
+}
+/*desktop*/
+
+@media (min-width: 1200px) {
+    #categorie-zoeken {
+        max-width: 1150px;
+    }
+}
+
+#categorie-zoeken select {
+    margin-top: 1em;
+    padding: 1em;
+    width: calc(100% - 6.3em);
+    max-width: 30em;
+    margin: auto;
+    border: none;
+    margin-top: 1em;
+}
+
+#input-text {
+    margin-top: 1em;
+    padding: 1em;
+    border: none;
+    width: calc(100% - 6.3em);
+    max-width: 30em;
+}
+
+#zoeken {
+    margin-left: 2em;
+    margin: 2em;
+}
+
+#zoek-label {
+    border: none;
+}
+
+.submit-knop {
+    padding: 0.7em;
+    margin-left: 1em;
+    font-size: 1em;
+    border: none;
+    border-radius: 4em;
+    background-color: #B32091;
+    color: #FFF;
+    width: 2em;
+    display: inline;
+}
+
+.submit-knop:hover {
+    background: #BE15A0;
+}
+
+
+
+/*Sectie 2*/
+
+#sectie-2 {
+    max-width: 40em;
+    margin: auto;
+    width: calc(100% - 3em);
+}
+
+/*Mijn verhalen*/
+
+
+h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.thumbnail {
+    width: 30%;
+    max-width: 10em;
+    border-radius: 5px;
+}
+
+.kruis {
+    width: 2em;
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: 0.5em;
+}
+
+.afbeeldingen {
+    width: 100%;
+}
+
+h2 {
+
+    margin-top: 5%;
+}
+
+img:hover {
+    transition: all .2s;
+    transform: scale(1.04);
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    
+    #mijn-verhalen {
+        max-width: 40em;
+        margin: auto;
+    }
+    h2 {
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    h1 {
+        max-width: 40em;
+    }
+    .afbeeldingen img {
+        margin-right: 1em;
+    }
+    .kruis {
+        margin-left: -3.5em;
+        margin-top: 0.5em;
+    }
+    
+    
+/*desktop viewport*/
+    @media (min-width: 1200px) {
+        
+    #sectie-2 {
+        max-width: inherit;
+
+    }
+    #mijn-verhalen {
+        display: flex;
+        max-width: 72em;
+        padding: 0em;
+        padding-top: 2%;
+    }
+    h2 {
+        margin: auto;
+        max-width: 1150px;
+        margin-top: 2em;
+    }
+    .afbeeldingen {
+        width: 40em;
+    }
+}
